@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        .container {
+            padding: 4rem;
+            margin: 4rem;
+        }
+
+        #publicTalk {
+            background-color: #09c;
+            border: thick solid #808080;
+        }
+
+        #groupConversation {
+            background-color: #b200ff;
+            border: thick solid #808080;
+        }
+    </style>
+    <script src="../lib/signalr.js/signalr.min.js"></script>
+    <script src="../js/Chat.js"></script>
+
+</head>
+<body>
+    <div id="publicTalk" class="container">
+        <input type="text" id="messageInp" />
+        <input type="submit" id="sendMessageBtn" value="Send" />
+        <ul id="conversation">
+        </ul>
+    </div>
+    <div id="groupConversation" class="container">
+        <div>
+            <input type="text" id="groupNameInp" />
+            <input type="submit" id="joinGroupBtn" value="Join" />
+        </div>
+        <br />
+        <div>
+            <input type="text" id="messageToGroupInp" />
+            <input type="submit" id="sendMessageToGroupBtn" value="Send To Group" />
+        </div>
+        <ul id="groupConversationUL">
+        </ul>
+    </div>
+</body>
+</html>
